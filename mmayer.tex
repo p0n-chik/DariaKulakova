@@ -1,0 +1,60 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\usepackage[russian]{babel}
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Кулакова Дарья Михайловна}
+\tagline{Начинающий аналитик, программист}
+\personalinfo{
+  \email{dmkulakova@edu.hse.ru}
+   \phone{+7 (951) 959 12 72}
+
+  \location{Москва, Россия}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{ОБРАЗОВАНИЕ}
+
+\cvevent{Бакалаврская программа «Прикладная математика и информатика», Факультет компьютерных наук}{Национальный исследовательский университет «Высшая школа экономики», Москва}{2019 -- 2023}{Москва, Россия}
+
+\divider
+
+\cvevent{Общее образование}{МАОУ СОШ № 9 им. А. С. Пушкина с углублённым изучением предметов физико-математического цикла
+}{2008 -- 2019}{Пермь, Россия}
+\divider
+
+\cvsection{НАВЫКИ}
+
+\cvskill{ Python, C++}{5}
+\cvskill{ Data Structures and Algorithms}{4}
+\cvskill{ C, MySQL, HTML}{4}
+\cvskill{ Дизайн Figma}{4}
+\cvskill{ Английский язык}{5}
+
+\clearpage
+\nocite{*}
+\end{document}
